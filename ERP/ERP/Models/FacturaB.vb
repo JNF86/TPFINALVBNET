@@ -1,0 +1,40 @@
+﻿Public Class FacturaB
+    Public Property Id As Integer
+    Public Property CUIT As String
+    Public Property FacturaBSerie As String
+    Public Property Fecha As DateTime
+    Public Property Vendedor As String
+    Public Property Razon As String
+    Public Property Direccion As String
+    Public Property TipoFactura As String
+    Public Property TipoPago As String
+    Public Property Remito As String
+    Public Property Codigo1 As String
+    Public Property Descripcion1 As String
+    Public Property Cantidad1 As Integer
+    Public Property Unitario1 As Decimal
+    Public Property Importe1 As Decimal
+    Public Property Codigo2 As String
+    Public Property Descripcion2 As String
+    Public Property Cantidad2 As Integer
+    Public Property Unitario2 As Decimal
+    Public Property Importe2 As Decimal
+    Public Property Codigo3 As String
+    Public Property Descripcion3 As String
+    Public Property Cantidad3 As Integer
+    Public Property Unitario3 As Decimal
+    Public Property Importe3 As Decimal
+    Public Property Codigo4 As String
+    Public Property Descripcion4 As String
+    Public Property Cantidad4 As Integer
+    Public Property Unitario4 As Decimal
+    Public Property Importe4 As Decimal
+    Public Property Codigo5 As String
+    Public Property Descripcion5 As String
+    Public Property Cantidad5 As Integer
+    Public Property Unitario5 As Decimal
+    Public Property Importe5 As Decimal
+    Public Property Total As Decimal
+    Public Property TipoIVA As String
+
+End Class

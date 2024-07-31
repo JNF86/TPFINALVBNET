@@ -1,0 +1,11 @@
+C:\Users\nahui\source\repos\ERP\ClassLibrary2\bin\Debug\DBM.dll
+C:\Users\nahui\source\repos\ERP\ClassLibrary2\bin\Debug\DBM.pdb
+C:\Users\nahui\source\repos\ERP\ClassLibrary2\bin\Debug\DBM.xml
+C:\Users\nahui\source\repos\ERP\ClassLibrary2\obj\Debug\DBM.vbprojAssemblyReference.cache
+C:\Users\nahui\source\repos\ERP\ClassLibrary2\obj\Debug\DBM.Resources.resources
+C:\Users\nahui\source\repos\ERP\ClassLibrary2\obj\Debug\DBM.vbproj.GenerateResource.cache
+C:\Users\nahui\source\repos\ERP\ClassLibrary2\obj\Debug\DBM.vbproj.CoreCompileInputs.cache
+C:\Users\nahui\source\repos\ERP\ClassLibrary2\obj\Debug\DBM.vbproj.CopyComplete
+C:\Users\nahui\source\repos\ERP\ClassLibrary2\obj\Debug\DBM.dll
+C:\Users\nahui\source\repos\ERP\ClassLibrary2\obj\Debug\DBM.xml
+C:\Users\nahui\source\repos\ERP\ClassLibrary2\obj\Debug\DBM.pdb

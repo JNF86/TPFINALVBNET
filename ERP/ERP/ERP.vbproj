@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ACA56E98-C83A-45C7-A735-A2F2C13FBA9F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ERP.My.MyApplication</StartupObject>
+    <RootNamespace>ERP</RootNamespace>
+    <AssemblyName>ERP</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ERP.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ERP.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DBQ">
+      <HintPath>..\..\..\..\Desktop\TPFINAL VB\TP_MII_Final_Recursos\TP_MII_Final_Recursos\DBQ\DBQ.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\BancosController.vb" />
+    <Compile Include="Controllers\ClientesController.vb" />
+    <Compile Include="Controllers\FacturaAController.vb" />
+    <Compile Include="Controllers\FacturaBController.vb" />
+    <Compile Include="Controllers\FacturaSerialesController.vb" />
+    <Compile Include="Controllers\FiscalController.vb" />
+    <Compile Include="Controllers\LogonController.vb" />
+    <Compile Include="Controllers\PrintFacturaAController.vb" />
+    <Compile Include="Controllers\PrintFacturaBController.vb" />
+    <Compile Include="Controllers\ProductosController.vb" />
+    <Compile Include="Controllers\ProveedoresController.vb" />
+    <Compile Include="Controllers\VendedoresController.vb" />
+    <Compile Include="Controllers\VentasController.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\Bancos.vb" />
+    <Compile Include="Models\FacturaA.vb" />
+    <Compile Include="Models\Clientes.vb" />
+    <Compile Include="Models\FacturaB.vb" />
+    <Compile Include="Models\FacturaSeriales.vb" />
+    <Compile Include="Models\Fiscal.vb" />
+    <Compile Include="Models\Logon.vb" />
+    <Compile Include="Models\Productos.vb" />
+    <Compile Include="Models\Proveedores.vb" />
+    <Compile Include="Models\Vendedores.vb" />
+    <Compile Include="Models\Ventas.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Views\Bancos\FrmBancos.Designer.vb">
+      <DependentUpon>FrmBancos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Bancos\FrmBancos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Bancos\FrmBancosCRUD.Designer.vb">
+      <DependentUpon>FrmBancosCRUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Bancos\FrmBancosCRUD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Clientes\FrmClientes.Designer.vb">
+      <DependentUpon>FrmClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Clientes\FrmClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Clientes\FrmClientesCRUD.Designer.vb">
+      <DependentUpon>FrmClientesCRUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Clientes\FrmClientesCRUD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FacturaSeriales\FrmFacturaSeriales.Designer.vb">
+      <DependentUpon>FrmFacturaSeriales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FacturaSeriales\FrmFacturaSeriales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FacturaSeriales\FrmFacturaSerialesCRUD.Designer.vb">
+      <DependentUpon>FrmFacturaSerialesCRUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FacturaSeriales\FrmFacturaSerialesCRUD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FacturasExplorar\FrmFacturaAExplorar.Designer.vb">
+      <DependentUpon>FrmFacturaAExplorar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FacturasExplorar\FrmFacturaAExplorar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FacturasExplorar\FrmFacturaBExplorar.Designer.vb">
+      <DependentUpon>FrmFacturaBExplorar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FacturasExplorar\FrmFacturaBExplorar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Facturas\FrmFacturaA.designer.vb">
+      <DependentUpon>FrmFacturaA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Facturas\FrmFacturaA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Facturas\FrmFacturaB.designer.vb">
+      <DependentUpon>FrmFacturaB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Facturas\FrmFacturaB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Fiscal\FrmFiscal.Designer.vb">
+      <DependentUpon>FrmFiscal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Fiscal\FrmFiscal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Fiscal\FrmFiscalCRUD.Designer.vb">
+      <DependentUpon>FrmFiscalCRUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Fiscal\FrmFiscalCRUD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Home\FrmHome.Designer.vb" />
+    <Compile Include="Views\Home\FrmHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Productos\FrmProductosCRUD.Designer.vb">
+      <DependentUpon>FrmProductosCRUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Productos\FrmProductosCRUD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Productos\FrmProductos.Designer.vb">
+      <DependentUpon>FrmProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Productos\FrmProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Proveedores\FrmProvedoresCRUD.Designer.vb">
+      <DependentUpon>FrmProvedoresCRUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Proveedores\FrmProvedoresCRUD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Proveedores\FrmProveedores.Designer.vb">
+      <DependentUpon>FrmProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Proveedores\FrmProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Vendedores\FrmVendedoresCRUD.Designer.vb">
+      <DependentUpon>FrmVendedoresCRUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Vendedores\FrmVendedoresCRUD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Vendedores\FrmVendedores.Designer.vb">
+      <DependentUpon>FrmVendedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Vendedores\FrmVendedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Logon\FrmLogon.Designer.vb">
+      <DependentUpon>FrmLogon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Logon\FrmLogon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Ventas\FrmVentas.Designer.vb">
+      <DependentUpon>FrmVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Ventas\FrmVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Bancos\FrmBancos.resx">
+      <DependentUpon>FrmBancos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Bancos\FrmBancosCRUD.resx">
+      <DependentUpon>FrmBancosCRUD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Clientes\FrmClientes.resx">
+      <DependentUpon>FrmClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Clientes\FrmClientesCRUD.resx">
+      <DependentUpon>FrmClientesCRUD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FacturaSeriales\FrmFacturaSeriales.resx">
+      <DependentUpon>FrmFacturaSeriales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FacturaSeriales\FrmFacturaSerialesCRUD.resx">
+      <DependentUpon>FrmFacturaSerialesCRUD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FacturasExplorar\FrmFacturaAExplorar.resx">
+      <DependentUpon>FrmFacturaAExplorar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FacturasExplorar\FrmFacturaBExplorar.resx">
+      <DependentUpon>FrmFacturaBExplorar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Facturas\FrmFacturaA.resx">
+      <DependentUpon>FrmFacturaA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Facturas\FrmFacturaB.resx">
+      <DependentUpon>FrmFacturaB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Fiscal\FrmFiscal.resx">
+      <DependentUpon>FrmFiscal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Fiscal\FrmFiscalCRUD.resx">
+      <DependentUpon>FrmFiscalCRUD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Home\FrmHome.resx" />
+    <EmbeddedResource Include="Views\Productos\FrmProductosCRUD.resx">
+      <DependentUpon>FrmProductosCRUD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Productos\FrmProductos.resx">
+      <DependentUpon>FrmProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Proveedores\FrmProvedoresCRUD.resx">
+      <DependentUpon>FrmProvedoresCRUD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Proveedores\FrmProveedores.resx">
+      <DependentUpon>FrmProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Vendedores\FrmVendedoresCRUD.resx">
+      <DependentUpon>FrmVendedoresCRUD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Vendedores\FrmVendedores.resx">
+      <DependentUpon>FrmVendedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Logon\FrmLogon.resx">
+      <DependentUpon>FrmLogon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Ventas\FrmVentas.resx">
+      <DependentUpon>FrmVentas.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Documents\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary2\DBM.vbproj">
+      <Project>{eadf1820-a739-400a-92dd-39677a4562d8}</Project>
+      <Name>DBM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addCrud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addCrudGray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelGray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cfgprint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cfgprintGray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deleteCrud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deleteCrudGray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_logon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\okay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\okayGray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printCrud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printCrudGray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\updateCrud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\updateCrudGray.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
